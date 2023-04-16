@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyTalk Live Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стили для иконки */
+        .icon {
+            width: 100px;
+            height: 100px;
+            background-color: #000000;
+            border-radius: 50%;
+            margin: 0 auto;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Стили для заголовка и описания */
+        .header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .description {
+            font-size: 24px;
+            color: #777;
+        }
+
+        /* Стили для кнопок */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            margin: 0 10px;
+            background-color: #2980b9;
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #1b4f72;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="icon"></div>
+    <div class="header">
+        <h1 class="title">MyTalk Live Chat</h1>
+        <p class="description">Welcome to MyTalk Live Chat! Connect with people in real-time.</p>
+    </div>
+    <div class="buttons">
+        <a href="landing1.html" class="button">Privacy Policy</a>
+        <a href="landing2.html" class="button">Terms & Conditions</a>
+        <a href="landing3.html" class="button">Deletion Data</a>
+    </div>
+    <script>
+        // Добавление анимации на кнопки
+        var buttons = document.querySelectorAll('.button');
+        buttons.forEach(function (button) {
+            button.addEventListener('mouseover', function () {
+                button.style.backgroundColor = '#2c3e50';
+            });
+            button.addEventListener('mouseout', function () {
+                button.style.backgroundColor = '#2980b9';
+            });
+        });
+    </script>
+</body>
+
+</html>

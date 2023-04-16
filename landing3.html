@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data Removal Request</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стили для заголовка и описания */
+        .header {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .description {
+            font-size: 24px;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        /* Стили для формы */
+        .form {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            width: 400px;
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .form label,
+        .form input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form button {
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #dc3545;
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .form button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="title">Data Removal Request</h1>
+        <p class="description">Please submit your request below to remove your data from our application.</p>
+    </div>
+    <div class="form">
+        <div class="form-container">
+            <form action="/remove_data" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="reason">Reason for data removal</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
